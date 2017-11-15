@@ -19,6 +19,10 @@ var fs = require('fs');
 var history = [ ];
 // list of currently connected clients (users)
 var clients = [ ];
+var finalhandler = require('finalhandler');
+var serveStatic = require('serve-static');
+
+var serve = serveStatic("./");
 
 /**
  * Helper function for escaping input strings
@@ -38,11 +42,8 @@ colors.sort(function(a,b) { return Math.random() > 0.5; } );
  */
 var server = http.createServer(function(request, response) {
     // Not important for us. We're writing WebSocket server, not HTTP server
-    fs.readFile('frontend.html',function (err, data){
-        res.writeHead(200, {'Content-Type': 'text/html','Content-Length':data.length});
-        res.write(data);
-        res.end();
-    });
+    var done = finalhandler(request, response);
+    serve(request, response, done);
 });
 server.listen(webSocketsServerPort, function() {
     console.log((new Date()) + " Server is listening on port " + webSocketsServerPort);
