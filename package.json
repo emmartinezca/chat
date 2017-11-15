@@ -2,7 +2,7 @@
   "name": "chat",
   "version": "1.0.0",
   "description": "Simple chat application",
-  "main": "chat-server.js",
+  "main": "frontend.html",
   "dependencies": {
     "websocket": "^1.0.25"
   },
