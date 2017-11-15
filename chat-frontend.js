@@ -24,7 +24,7 @@ $(function () {
     }
 
     // open connection
-    var connection = new WebSocket('ws://hidden-lake-37364.herokuapp.com');
+    var connection = new WebSocket('wss://hidden-lake-37364.herokuapp.com');
 
     connection.onopen = function () {
         // first we want users to enter their names
