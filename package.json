@@ -4,7 +4,9 @@
   "description": "Simple chat application",
   "main": "chat-server.js",
   "dependencies": {
-    "websocket": "^1.0.25"
+    "websocket": "^1.0.25",
+    "serve-static": "1.13.1",
+    "finalhandler": "1.1.0"
   },
   "devDependencies": {},
   "scripts": {
