@@ -1,0 +1,23 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "Simple chat application",
+  "main": "chat-server.js",
+  "dependencies": {
+    "websocket": "^1.0.25"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emmartinezca/chat.git"
+  },
+  "author": "emmartinezca@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emmartinezca/chat/issues"
+  },
+  "homepage": "https://github.com/emmartinezca/chat#readme"
+}
